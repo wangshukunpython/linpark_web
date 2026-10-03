@@ -1,0 +1,24 @@
+请帮我彻底解决项目中的阻碍项（Blocking Items），更新所有配置文件与法律页面，并完成首次 Git 提交。
+
+### 1. 修改 `lib/site-config.ts`（或相关的全局配置文件）
+请将配置文件中的字段更新为以下最终真实信息：
+- **domain / siteUrl**: `https://linkparkai.com`
+- **companyName**: `LinPark Studio LLC`
+- **contactEmail**: `support@linkparkai.com`
+- **address**: `30 N Gould St Ste N, Sheridan, WY 82801`
+- **stripeCheckoutUrl**: 暂时保留环境变量或设为允许留空/跳转至 `#pricing` 的默认值，并标注注释 `// TODO: Replace with real Stripe Payment Link after bank approval`
+
+### 2. 全局搜替换旧信息
+1. 请在整个代码库中全局搜索 `wangshukun937@gmail.com`，将其全部替换为官方邮箱 `support@linkparkai.com`。
+2. 全局搜索 `yourdomain.com`，全部替换为 `linkparkai.com`。
+
+### 3. 修改法律条款管辖州 (`app/terms/page.tsx`)
+找到第 7 节（Governing Law / 管辖法律）及相关条款，将管辖州由 `Delaware` 或 `State of Delaware` 改为：
+- **`State of Wyoming, USA`**（怀俄明州）。
+
+### 4. 完成首次 Git 提交
+在完成上述修改并确认 `npm run build` 打包零报错后，在终端执行：
+1. `git add .`
+2. `git commit -m "feat: complete business compliance configurations and site branding for linkparkai.com"`
+
+请现在开始依次执行，完成后告诉我结果。
